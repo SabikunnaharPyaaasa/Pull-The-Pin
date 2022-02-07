@@ -41,7 +41,7 @@ else if(j==3){
 }
 
 function showLogo() {
-    document.getElementById('game_screen').innerHTML = "<img src =logo.png width=\"300px\" height=\"400px\">";
+    document.getElementById('game_screen').innerHTML = "<img src =logo.png width=\"300px\" height=\"350px\">";
  
   }
 
