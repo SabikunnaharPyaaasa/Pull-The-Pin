@@ -7,7 +7,7 @@ vid.playbackRate = 1.2;
 icon1  = document.getElementById('icon1');
 icon2  = document.getElementById('icon2');
 icon3  = document.getElementById('icon3');
-play_btn  = document.getElementById('play_btn');
+
 
 
 function playVid()
@@ -39,15 +39,19 @@ else if(j==3){
     if(i>7.5)
     {
        
-        showLogo();
+        openForm();
         audio_end.play();
-        play_btn.style="display:block; border-radius:50px; font-size:40px; color:black"
+        
     }
 }
 
 function showLogo() {
     document.getElementById('game_screen').innerHTML = "<img src =logo.png width=\"300px\" height=\"350px\">";
  
+  }
+
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
   }
 
 // function showLogo(){
