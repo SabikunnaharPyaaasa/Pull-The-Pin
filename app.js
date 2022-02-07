@@ -25,10 +25,10 @@ function pauseVid(){
     vid.pause();
     j=j+1;
     if(j==2){
-        icon2.style="display:block; border-radius:5px; font-size:48px; color:green"
+        icon2.style="display:block; border-radius:5px; font-size:48px; color:black"
 }
 else if(j==3){
-        icon3.style="display:block; border-radius:20px; font-size:40px; color:green"
+        icon3.style="display:block; border-radius:20px; font-size:40px; color:black"
 }
     i=i+2.1;
     if(i>7.5)
@@ -39,7 +39,7 @@ else if(j==3){
 }
 
 function showLogo() {
-    document.getElementById('game_screen').innerHTML = "<img src =./logo.png width=\"300px\" height=\"400px\">";
+    document.getElementById('game_screen').innerHTML = "<img src =logo.png width=\"300px\" height=\"400px\">";
   }
 
 // function showLogo(){

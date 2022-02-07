@@ -9,15 +9,16 @@
 <body> 
 
 <div class="mygame">
-    <div id ="game_screen" class="game_screen">
-        <i class="fa fa-hand-o-right" id="icon1" style="font-size:48px;color:rgb(131, 118, 118); border-radius: 50%;"></i>
-        <i class='fa fa-hand-o-left' id="icon2" style="font-size:48px; color:red; border-radius: 50%;"></i>
-        <i class="fa fa-hand-o-up" id="icon3" style="font-size:48px;color:rgb(0, 255, 42); border-radius: 50%;"></i>
+    <div id ="game_screen" >
+      
 
-        <video id="myVideo" width="440px" height="676">
+        <video id="myVideo" width="300px" height="400">
             <source src="DVplayable.mp4" type="video/mp4" controls>
             <div id="game_screen"></div>
         </video>
+        <i class="fa fa-hand-o-up" id="icon1" style="font-size:48px;color:rgb(19, 11, 11); border-radius: 50%;"></i>
+        <i class='fa fa-hand-o-up' id="icon2" style="font-size:48px; color:rgb(10, 1, 1); border-radius: 50%;"></i>
+        <i class="fa fa-hand-o-up" id="icon3" style="font-size:48px;color:rgb(2, 2, 2); border-radius: 50%;"></i>
         <!-- <div id ="game_Logo">
            
                 <img src="logo.png" width="440px" height="506">
@@ -36,17 +37,13 @@
        background-color:antiquewhite;
        height:100vh
    }
-
-   .game_screen{
-    display:flex;
-       justify-content: center;
-       align-items:center;
-       width: 500;
-       height: 600;
-       /* background-color:rgb(173, 161, 151); */
-       
-       height:80vh
-   }
+   #game_screen{
+            height:500px;
+            width:300px; 
+            padding-top: 40px;
+            background-color: rgb(36, 35, 35);
+            border-radius: 15px; 
+        }
 
    #icon1{
            
@@ -61,29 +58,29 @@
 
        
        @keyframes icon1_ {
-        0%   {background-color:rgb(255, 166, 0);  left:150px; top:20px; opacity:0; }
-        100%  {background-color:rgb(228, 228, 240); left:190px; top:-80px; opacity:1;}
+        0%   {background-color:rgb(250, 248, 245);  left:150px; top:-90px; opacity:0; }
+        100%  {background-color:rgb(255, 254, 253); left:150px; top:-90px; opacity:1;}
         }
 
         #icon2{
             position: relative;
             animation-name: icon2_;
-            animation-duration: 2s;
+            animation-duration: 1s;
             animation-iteration-count: 10;
-            height: 15px;
-            width: 10px;
+            height: 10px;
+            width: 15px;
             display: none;
         }
         @keyframes icon2_ {
-        0%   { left:120px; top:-270px;}
-        100%  {background-color:yellow; left:160px; top:-270px;}
+        0%   {background-color:rgb(247, 247, 240);  left:140px; top:-260px;opacity:0;}
+        100%  {background-color:rgb(247, 247, 240); left:140px; top:-260px;opacity:1;}
         }
 
 
         #icon3{
             position: relative;
             animation-name: icon3_;
-            animation-duration: 2s;
+            animation-duration: 1s;
             animation-iteration-count: 10;
             display: none;
             height: 45px;
@@ -91,8 +88,8 @@
         }
 
         @keyframes icon3_ {
-        0%   {background-color:red; left:130px; top:-300px;}
-        100%  {background-color:yellow; left:130px; top:-360px;}
+        0%   {background-color:rgb(248, 238, 238); left:110px; top:-270px; opacity:0;}
+        100%  {background-color:rgb(255, 255, 255); left:110px; top:-270px; opacity:1;}
         }
     </style>
 
