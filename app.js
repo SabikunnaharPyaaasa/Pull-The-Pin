@@ -1,4 +1,6 @@
 var vid = document.getElementById("myVideo");
+var audio= document.getElementById("my_audio");
+var audio_end= document.getElementById("my_audio1");
 var i = 1.5;
 var j = 1;
 vid.playbackRate = 1.2;
@@ -10,7 +12,8 @@ play_btn  = document.getElementById('play_btn');
 
 function playVid()
 {
-    vid.play();
+    audio.play();
+   
     if(j==1){
         icon1.style="display:none"
     }
@@ -20,6 +23,7 @@ function playVid()
     else if(j==3){
         icon3.style="display:none"
     }
+    vid.play();
 }
 
 function pauseVid(){
@@ -36,6 +40,7 @@ else if(j==3){
     {
        
         showLogo();
+        audio_end.play();
         play_btn.style="display:block; border-radius:50px; font-size:40px; color:black"
     }
 }
