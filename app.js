@@ -1,16 +1,36 @@
 var vid = document.getElementById("myVideo");
-var i = 1.82;
-vid.playbackRate = 1.5;
+var i = 1.5;
+var j = 1;
+vid.playbackRate = 0.8;
+icon1  = document.getElementById('icon1');
+icon2  = document.getElementById('icon2');
+icon3  = document.getElementById('icon3');
 
 
 function playVid()
 {
     vid.play();
+    if(j==1){
+        icon1.style="display:none"
+    }
+    else if(j==2){
+        icon2.style="display:none"
+    }
+    else if(j==3){
+        icon3.style="display:none"
+    }
 }
 
 function pauseVid(){
     vid.pause();
-    i=i+1.55;
+    j=j+1;
+    if(j==2){
+        icon2.style="display:block; border-radius:5px; font-size:48px; color:green"
+}
+else if(j==3){
+        icon3.style="display:block; border-radius:20px; font-size:40px; color:green"
+}
+    i=i+2.1;
     if(i>7.5)
     {
        

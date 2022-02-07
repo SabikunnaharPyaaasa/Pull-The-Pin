@@ -1,9 +1,19 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
 <body> 
 
 <div class="mygame">
     <div id ="game_screen" class="game_screen">
+        <i class="fa fa-hand-o-right" id="icon1" style="font-size:48px;color:rgb(131, 118, 118); border-radius: 50%;"></i>
+        <i class='fa fa-hand-o-left' id="icon2" style="font-size:48px; color:red; border-radius: 50%;"></i>
+        <i class="fa fa-hand-o-up" id="icon3" style="font-size:48px;color:rgb(0, 255, 42); border-radius: 50%;"></i>
+
         <video id="myVideo" width="440px" height="676">
             <source src="DVplayable.mp4" type="video/mp4" controls>
             <div id="game_screen"></div>
@@ -16,6 +26,7 @@
         </div> -->
     </div>
 </div>
+</head>
 
 <style>
    .mygame{
@@ -30,12 +41,59 @@
     display:flex;
        justify-content: center;
        align-items:center;
-       width: 600;
+       width: 500;
        height: 600;
        /* background-color:rgb(173, 161, 151); */
        
        height:80vh
    }
+
+   #icon1{
+           
+           position: relative;
+           animation-name: icon1_;
+           animation-duration: 2s;
+           animation-iteration-count: 10;
+           
+           
+           
+       }
+
+       
+       @keyframes icon1_ {
+        0%   {background-color:rgb(255, 166, 0);  left:150px; top:20px; opacity:0; }
+        100%  {background-color:rgb(228, 228, 240); left:190px; top:-80px; opacity:1;}
+        }
+
+        #icon2{
+            position: relative;
+            animation-name: icon2_;
+            animation-duration: 2s;
+            animation-iteration-count: 10;
+            height: 15px;
+            width: 10px;
+            display: none;
+        }
+        @keyframes icon2_ {
+        0%   { left:120px; top:-270px;}
+        100%  {background-color:yellow; left:160px; top:-270px;}
+        }
+
+
+        #icon3{
+            position: relative;
+            animation-name: icon3_;
+            animation-duration: 2s;
+            animation-iteration-count: 10;
+            display: none;
+            height: 45px;
+            width: 45px;
+        }
+
+        @keyframes icon3_ {
+        0%   {background-color:red; left:130px; top:-300px;}
+        100%  {background-color:yellow; left:130px; top:-360px;}
+        }
     </style>
 
 <script src="./app.js"></script> 
