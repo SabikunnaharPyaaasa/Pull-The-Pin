@@ -1,9 +1,9 @@
 var vid = document.getElementById("myVideo");
 var audio= document.getElementById("my_audio");
 var audio_end= document.getElementById("my_audio1");
-var i = 1.5;
+var i = 1.6;
 var j = 1;
-vid.playbackRate = 1.2;
+vid.playbackRate = 1.3;
 icon1  = document.getElementById('icon1');
 icon2  = document.getElementById('icon2');
 icon3  = document.getElementById('icon3');
@@ -35,8 +35,8 @@ function pauseVid(){
 else if(j==3){
         icon3.style="display:block;  font-size:40px; color:black"
 }
-    i=i+2.1;
-    if(i>7.5)
+    i=i+2.3;
+    if(i>7.9)
     {
        
         openForm();
